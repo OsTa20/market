@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <title>TAKWA</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand head" href="index.html">TAKWA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#markets">Markets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Abouts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" id="mum">
+                  <li><a class="dropdown-item nav-link" href="#singin">Singin</a></li>
+                  <li><a class="dropdown-item nav-link" href="#">Other web</a></li>
+                  <li><a class="dropdown-item nav-link" href="#who">Who us</a></li>
+                </ul>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            -->
+            </ul>
+            <!--
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            -->
+          </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./img/p1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color: rgba(221, 218, 218,.8);color: black;">
+              <h5>You Are Welcome</h5>
+              <p>The First Market In The World.</p>
+              <a href="#singin" class="btn btn-primary">Singin</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./img/p2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./img/p3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel -->
+      <!-- card -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img/p2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="row g-0">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./img/p3.jpg" class="img-fluid rounded-end" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#sin" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          2 days ago
+        </div>
+      </div>
+      <!-- card -->
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              hello from bootstrap
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <!-- img responsive -->
+      <div class="clearfix" id="who">
+        <h3 style="width: 200px;background-color: rgb(100, 100, 246);color: white; margin: 20px auto;text-align: center;">Who us</h3>
+        <img src="./img/p1.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." style="max-width: 100%;">
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div>
+      <!-- offcanvas -->
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+      <!-- offcanvas -->
+      <!-- accordion -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- accordion -->
+      <!-- popover -->
+      <button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="This popover is themed via CSS variables.">
+        Custom popover
+      </button>
+      <!-- popover -->
+      <!-- page -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- page -->
+      <!-- progress -->
+      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 25%">25%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 100%">100%</div>
+      </div>
+      <!-- progress -->
+      <!-- card grop -->
+      <!-- products -->
+      <div id="products">
+        <h3 style="width: 200px;background-color: rgb(100, 100, 246);color: white; margin: 20px auto;text-align: center;">Products</h3>
+        <div class="card-group">
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product one</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product two</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product three</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- products -->
+      <!-- markets -->
+      <div id="markets">
+        <h3 style="width: 200px;background-color: rgb(100, 100, 246);color: white; margin: 20px auto;text-align: center;">Markets</h3>
+        <div class="card-group">
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market one</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market two</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market three</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market four</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market five</h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-group" id="moma">
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market six</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market seven</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market eight</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market nine</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/p1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Market ten</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- markets -->
+      <!-- card grop -->
+      <!-- singin -->
+      <form class="row g-3 needs-validation" id="singin" novalidate="">
+        <div class="col-md-4">
+          <label for="invalidationCustom01" class="form-label">Your name</label>
+          <input type="text" class="form-control" id="invalidationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-5">
+          <label for="invalidationCustom03" class="form-label">Email</label>
+          <input type="email" class="form-control" id="invalidationCustom03" placeholder="example@example.com" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>  
+        <div class="col-md-4">
+          <label for="invalidationCustom02" class="form-label">Password</label>
+          <input type="password" class="form-control" id="invalidationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="invalidationCustom04" class="form-label">country</label>
+          <select class="form-select" id="invalidationCustom04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Syria</option>
+            <option>Egypt</option>
+            <option>Palestine</option>
+            <option>Saudi Arabia</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid country.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Singin</button>
+        </div>
+      </form>
+      <!-- singin -->
+      <!-- footer -->
+      <div class="footer">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col col-12 col-sm-6 col-md-4">
+              <a href="">Home</a>
+              <a href="#products">Products</a>
+              <a href="#markets">Markets</a>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-4">
+              <a href="">Abouts</a>
+              <a href="">Contacts us</a>
+              <a href="#singin">Singin</a>
+              <a href="">Others web</a>
+              <a href="#who">Who us</a>
+              <a href="">Rate us</a>
+            </div>
+            <div id="hr"></div>
+            <div class="col col-12 col-sm-6 col-md-4" id="social">
+              <h3 style="color: blue;">Takwa</h3>
+              <a href=""><img src="./img/p1.png"></a>
+              <a href=""><img src="./img/p1.png"></a>
+              <a href=""><img src="./img/p1.png"></a>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 30px auto;width: 320px;font-size: 13px; color: white;">Copyright 2024 by <a href="" style="display: inline;">Takwa</a> All Rights Reserved.</div>
+      </div>
+      <!-- footer -->
+</body>
+<script src="./js/index.js"></script>
+</html>
