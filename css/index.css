@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* nav */
+.navbar {
+    padding: 0;
+    margin: 0;
+    min-height: 50px;
+}
+nav div {
+    background-color: #d5d7f6;
+    padding: 5px;
+    margin: 0;
+    min-height: 50px;
+}
+nav .container-fluid .head {
+    color: blue;
+    font-weight: bolder;
+}
+#mum li {
+    padding-left: 10px;
+}
+/* carousel */
+.carousel img {
+    height: 500px;
+}
+
+/* who */
+#who p {
+    padding-left: 10px;
+}
+
+/* products */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translateX(400%);  /* move it way off the screen to the right */
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+.box.show {
+    transform: translateX(0);
+}
+
+/* markets */
+#who h3, #products h3, #markets h3, #accordionExample h3 {
+    margin: 100px auto;
+    width: 200px;
+    background-color: rgb(100, 100, 246);
+    color: white;
+    text-align: center;
+}
+#markets {
+    padding: 0;
+    margin: 20px auto;
+}
+#markets img {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    margin: 5px auto;
+    display: inline-block;
+}
+#markets h5 {
+    text-align: center;
+}
+
+/* pages */
+#pagespr {
+    margin: 0 auto;
+}
+
+#usern {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    line-height: 300px;
+    font-size: 25px;
+}
+
+/* singin */
+#singin {
+    background-color: #d5d7f6;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* footer */
+#hr {
+    display: none;
+    height: 5px;
+    background-color: white;
+    margin: 20px auto;
+}
+.footer {
+    background-color: black;
+    padding: 20px;
+}
+.container a {
+    display: block;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+}
+#social a , #social img  {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+@media all and (max-width: 500px) {
+    #mum li {
+        padding-left: 10px;
+    }
+    .carousel img {
+        height: 350px;
+    }
+    #hr {
+        display: block;
+    }
+    #moma {
+        display: none;
+    }
+    #dialog {
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        z-index: 5;
+    }
+}
